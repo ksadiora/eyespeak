@@ -963,7 +963,7 @@ function startMouseTest() {
 }
 
 async function repairMessage(text) {
-  const response = await fetch('/api/repair', {
+  const response = await fetch('api/repair', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text }),
